@@ -1,0 +1,36 @@
+.box {
+    color: #ea4343;
+    position: absolute;
+    opacity: 0;
+    transform: translate(-50%);
+}
+
+.b1 {
+    animation: ani1 5s infinite;
+}
+.b2 {
+    animation: ani2 5s infinite;
+}
+
+@keyframes ani1 {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+@keyframes ani2 {
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
