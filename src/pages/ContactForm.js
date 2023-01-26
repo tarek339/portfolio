@@ -72,7 +72,7 @@ const ContactForm = () => {
     },
     validationSchema: validationSchema,
     onSubmit: async (values, {resetForm}) => {
-      await axios.post('http://localhost:8000/', values)
+      await axios.post('https://portfolio-backend-6e85.onrender.com', values)
       .then(res => {
         setOpen(true)
         setMessage(res.data.message)
