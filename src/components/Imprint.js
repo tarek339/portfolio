@@ -39,7 +39,7 @@ export default function Imprint() {
         <h2>Impressum</h2>
         <GrClose className='close-icon' onClick={handleClose}/>
         </Grid>
-        <div className={modal} sx={{ mt: 2 }}>
+        <div className="modal" sx={{ mt: 2 }}>
           <p>Tarek's Web & App Developement</p>
           <p>Classenweg 21</p>
           <p>22391 Hamburg</p>
