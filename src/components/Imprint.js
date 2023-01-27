@@ -4,6 +4,8 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { GrClose } from 'react-icons/gr';
 import { Grid } from '@mui/material';
+import { BsLinkedin, BsWhatsapp, BsGithub } from 'react-icons/bs';
+import { IoMailSharp } from 'react-icons/io5';
 
 const style = {
   position: 'absolute',
