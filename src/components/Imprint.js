@@ -49,7 +49,7 @@ export default function Imprint() {
         <div className='imprint-icon'>
           <a href='mailto:tarekjassine@gmail.com'><IoMailSharp size="24px"/></a> 
           &nbsp;&nbsp;
-          <a href='https://wa.me/004915125258758' target="_blank" rel='noreferrer'><BsWhatsapp size="24px"/></a>
+          <a href='https://wa.me/+4915125258758' target="_blank" rel='noreferrer'><BsWhatsapp size="24px"/></a>
           &nbsp;&nbsp;
           <a href='https://www.linkedin.com/in/tarekjassine' target="_blank" rel='noreferrer'><BsLinkedin size="24px"/></a> 
           &nbsp;&nbsp;
