@@ -24,7 +24,7 @@ export default function Footer() {
           direction="row"
           justifyContent="space-between"
         >
-        <Typography variant='body1'>Inhalt gehört Tarek Jassine</Typography> 
+        <Typography variant='body1'>Tarek Jassine</Typography> 
         <div className='same'>
           <div className='body1' variant='body1'>
             <PrivacyModal/>
