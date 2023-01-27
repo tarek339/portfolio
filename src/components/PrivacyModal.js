@@ -10,7 +10,6 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: "80%",
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -35,7 +34,7 @@ export default function PrivacyModal() {
       >
         <Box sx={style}>
         <Grid container direction="row" justifyContent="space-between">
-          <Typography variant="h6">DSGVO (Datenschutz-Grundverordnung)</Typography>
+          <h2>DSGVO</h2>
           <GrClose className='close-icon' onClick={handleClose}/>
         </Grid>
           <Typography sx={{ mt: 2 }}>
