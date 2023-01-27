@@ -123,6 +123,18 @@ h2 {
   margin: 0 auto;
 }
 
+.imprint-icon {
+  cursor: pointer;
+}
+
+a:visited {
+  color: #222;
+}
+
+a {
+  color: #222;
+}
+
 .same {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
