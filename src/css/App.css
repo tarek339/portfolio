@@ -135,6 +135,12 @@ a {
   color: #222;
 }
 
+@media screen and (max-width:426px) {
+  .modal {
+    width: 90%;
+  }
+}
+
 .same {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
