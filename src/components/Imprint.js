@@ -34,12 +34,12 @@ export default function Imprint() {
         onClose={handleClose}
         disableAutoFocus={true}
       >
-        <Box sx={style}>
+        <Box className="modal" sx={style}>
         <Grid container direction="row" justifyContent="space-between">
         <h2>Impressum</h2>
         <GrClose className='close-icon' onClick={handleClose}/>
         </Grid>
-        <div className="modal" sx={{ mt: 2 }}>
+        <div sx={{ mt: 2 }}>
           <p>Tarek's Web & App Developement</p>
           <p>Classenweg 21</p>
           <p>22391 Hamburg</p>
