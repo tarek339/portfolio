@@ -45,6 +45,15 @@ export default function Imprint() {
           <p>+49 (0) 151 25258758</p> 
           <p>USt.-IdNr.: DE355575992</p>
         </div>
+        <div className='imprint-icon'>
+          <a href='mailto:tarekjassine@gmail.com'><IoMailSharp size="24px"/></a> 
+          &nbsp;&nbsp;
+          <a href='https://wa.me/015125258758' target="_blank" rel='noreferrer'><BsWhatsapp size="24px"/></a>
+          &nbsp;&nbsp;
+          <a href='https://www.linkedin.com/in/tarekjassine' target="_blank" rel='noreferrer'><BsLinkedin size="24px"/></a> 
+          &nbsp;&nbsp;
+          <a href='https://github.com/tarek339' target="_blank" rel='noreferrer'><BsGithub size="24px"/></a>
+        </div>
         </Box>
       </Modal>
     </div>
