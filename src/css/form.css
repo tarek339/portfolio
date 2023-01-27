@@ -80,6 +80,14 @@ button:hover {
     border:1px solid red;
 }
 
+.input-error::placeholder {
+    color: red;
+}
+
+.input-error:invalid {
+    color: red;
+}
+
 .check-error {
     color: red;
 }
