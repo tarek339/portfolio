@@ -32,7 +32,7 @@ export default function PrivacyModal() {
         onClose={handleClose}
         disableAutoFocus={true}
       >
-        <Box className={modal} sx={style}>
+        <Box className="modal" sx={style}>
         <Grid container direction="row" justifyContent="space-between">
           <h2>DSGVO</h2>
           <GrClose className='close-icon' onClick={handleClose}/>
