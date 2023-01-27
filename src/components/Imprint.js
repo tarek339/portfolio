@@ -12,7 +12,6 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: "80%",
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -40,7 +39,7 @@ export default function Imprint() {
         <h2>Impressum</h2>
         <GrClose className='close-icon' onClick={handleClose}/>
         </Grid>
-        <div sx={{ mt: 2 }}>
+        <div className={modal} sx={{ mt: 2 }}>
           <p>Tarek's Web & App Developement</p>
           <p>Classenweg 21</p>
           <p>22391 Hamburg</p>
