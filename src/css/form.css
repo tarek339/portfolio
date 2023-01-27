@@ -28,6 +28,7 @@ input, textarea, select {
 
 select, option {
     cursor: pointer;
+    background-color: #fff;
 }
 
 textarea:focus, input:focus, select:focus{
