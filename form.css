@@ -1,0 +1,120 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 500px;
+    }
+    
+    .select { grid-area:        1 / 1 / 2 / 2; }
+    .first-name { grid-area:    2 / 1 / 3 / 2; }
+    .last-name { grid-area:     3 / 1 / 4 / 2; }
+    .company { grid-area:       4 / 1 / 5 / 2; }
+    .e-mail { grid-area:        5 / 1 / 6 / 2; }
+    .phone-number { grid-area:  6 / 1 / 7 / 2; }
+    .text { grid-area:          7 / 1 / 8 / 2; }
+    .checkbox { grid-area:      8 / 1 / 9 / 2; }
+    .button { grid-area:        9 / 1 / 10 / 2; }
+
+input, textarea, select {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    position: relative;
+}
+
+input, select {
+    height: 30px;
+}
+
+select, option {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+textarea:focus, input:focus, select:focus{
+    outline: none;
+}
+
+textarea {
+    font-family: sans-serif;
+}
+
+::placeholder {
+    font-family: sans-serif;
+}
+
+.checkbox, #checkbox_id {
+    cursor: pointer;
+}
+
+#label {
+    cursor:pointer;
+    font-size: 15px;
+}
+
+.button {
+    background-color: #ea4343;
+    border: 1px solid #ea4343;
+    color: white;
+    height: 30px;
+    width: 100px;
+    transition: 0.3s;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    color: #ea4343;
+    background-color: white;
+    border: 1px solid #ea4343;
+    transition: 0.3s;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    padding-top: 3px;
+}
+
+.input-error {
+    border: 2px solid red;
+    color: red;
+}
+
+.input-error::placeholder {
+    color: red;
+}
+
+.input-error:invalid {
+    color: red;
+}
+
+.check-error {
+    color: red;
+}
+
+[type="checkbox"] {
+    float: left;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+select,
+select option {
+  color: #000;
+}
+
+select:invalid,
+select option[value=""] {
+  color: grey;
+}
+
+[hiddin] {
+    display: none;
+}
