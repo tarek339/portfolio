@@ -4,6 +4,8 @@ import * as Yup from 'yup';
 import { Snackbar, Alert, Typography, createTheme, responsiveFontSizes } from '@mui/material';
 import axios from 'axios';
 import { ThemeProvider } from '@emotion/react'
+import { RiSendPlaneFill } from 'react-icons/ri';
+
 
 let theme = createTheme()
 theme = responsiveFontSizes(theme)
@@ -72,7 +74,7 @@ const ContactForm = () => {
     },
     validationSchema: validationSchema,
     onSubmit: async (values, {resetForm}) => {
-      await axios.post('https://portfolio-backend-6e85.onrender.com', values)
+      await axios.post('http://localhost:8000/', values)
       .then(res => {
         setOpen(true)
         setMessage(res.data.message)
@@ -200,7 +202,11 @@ const ContactForm = () => {
         >Ich habe die Datenschutz-Grundverordnung (siehe Link DSGVO unten rechts) gelesen und aktzeptiert.</label>
       {formik.touched.checked ? <div className='error'>{formik.errors.checked}</div> : undefined}
       </div>
-      <button className="button" type="submit">Senden</button>
+      <button 
+        className="button" 
+        type="submit"
+      >Senden <RiSendPlaneFill style={{verticalAlign:"middle"}}/>
+      </button>
       </form>
       <Snackbar
         anchorOrigin={{
