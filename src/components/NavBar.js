@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import MenuIcon from "@mui/icons-material/Menu"
 import { Box, 
          Drawer, 
-         IconButton, 
          List, 
          ListItem, 
          ListItemButton, 
@@ -32,10 +31,17 @@ export default function DrawerAppBar(props) {
       <Divider /> */}
       <List>
       <ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: 'center' }}>
+            <ListItemText>
+                <Link underline="none" href="#home" style={{color:"#222", fontSize:"16px", textTransform:"uppercase"}}>Home</Link>
+            </ListItemText>
+          </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText>
                 <Link underline="none" href="#service" style={{color:"#222", fontSize:"16px", textTransform:"uppercase"}}>Leistung</Link>
-                </ListItemText>
+              </ListItemText>
             </ListItemButton>
           </ListItem>
           <ListItem  disablePadding>
@@ -59,31 +65,35 @@ export default function DrawerAppBar(props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
+    
     <Box>
-      <AppBar sx={{backgroundColor:"white"}}>
-        <div>
+      <AppBar elevation={3} sx={{backgroundColor:"white"}}>
+        <div
+        >
         <Toolbar className="navbar" variant="dense">
-          <IconButton
+          <MenuIcon
             edge="start"
             onClick={handleDrawerToggle}
             sx={{ color:"#222", mr: 1, display: { sm: "none" } }}
-          >
-            <MenuIcon/>
-          </IconButton>
+          />
           <Typography style={{color:"#222", fontSize:"18px", fontFamily:"sans-serif"}} sx={{ flexGrow: 1}}>Tarek's Web & App Developement</Typography>
           <Box sx={{ display: { xs: 'none', sm: "block" } }}>
           <Stack direction="row" spacing={4}>
-              <Link className="link" underline="none" href="#home" sx={{color:"#222", fontSize:"18px"}}>
-              Home
+              <Link underline="none" href="#home">
+                <button 
+                className="link"
+                >Home</button>
               </Link>
-              <Link className="link" underline="none" href="#aboutme" sx={{color:"#222", fontSize:"18px"}}>
-              Über mich
+              <Link underline="none" href="#aboutme">
+                <button className="link">About me</button>
               </Link>
-              <Link className="link" underline="none" href="#service" sx={{color:"#222", fontSize:"18px"}}>
-              Leistung
+              <Link underline="none" href="#service">
+                <button className="link">Service</button>
               </Link>
-              <Link className="link-contact" underline="none" href="#contact" sx={{color:"#ea4343", fontSize:"18px"}}>
-              Kontakt
+              <Link underline="none" href="#contact">
+                <button className="link">
+                  <span>Kontakt</span>
+                </button>
               </Link>
           </Stack>
           </Box>
